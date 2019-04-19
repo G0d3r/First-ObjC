@@ -10,8 +10,14 @@
 
 int main(int argc, const char * argv[]) {
     @autoreleasepool {
-        int num = 400;
-        NSLog(@"num equals: %i", num);
+        //jak to jest z zmienne stale i zmnienne ?
+        //w swiftcie jest let i var
+        //czym jest autoreleasepool ? ... wiem, że opodwiada za zarządzenie pamięcią
+        int answer = 0;
+        int guess = 0;
+        int turn = 0;
+        answer = arc4random();
+        NSLog(@"The random value is: %i", answer);
     }
     return 0;
 }
